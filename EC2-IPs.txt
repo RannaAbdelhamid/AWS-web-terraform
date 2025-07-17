@@ -1,0 +1,4 @@
+The nginx-pub1 Public ip is 107.23.35.116, and its Private ip is 10.0.0.97
+The nginx-pub2 Public ip is 34.201.11.252, and its Private ip is 10.0.2.159
+The backend-priv1 Private ip is 10.0.1.72
+The backend-priv2 Private ip is 10.0.3.165
