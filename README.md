@@ -56,4 +56,5 @@ It demonstrates best practices for organizing a cloud environment with public/pr
  - When using Public DNS you will get the content of the private machine in the private subnet
  - All Ips of the machines will be saved in the EC2-IPs.txt file
 
-<img width="736" height="203" alt="screen1" src="https://github.com/user-attachments/assets/4963177c-0176-490b-bc8e-f25d37df7377" />
+<img width="736" height="203" alt="screen1" src="https://github.com/user-attachments/assets/4963177c-0176-490b-bc8e-f25d37df7377" /><img width="678" height="406" alt="arch" src="https://github.com/user-attachments/assets/e2adfd0a-9f45-477c-9f52-76fb501627a2" />
+
