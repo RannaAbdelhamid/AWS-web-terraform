@@ -1,11 +1,12 @@
-output "vpc_id" {
-    value = aws_vpc.project-vpc.id
+/*output "public_ip" {
+    value = aws_instance.nginx_a.public_ip
+}*/
+
+output "private_ip" {
+    value = aws_instance.backend.private_ip
 }
 
-output "public_dns" {
-    value = aws_lb.public_alb.dns_name
-}
-
-output "internal_dns" {
-    value = aws_lb.internal_alb.dns_name
+output "id" {
+    value = aws_instance.backend.id
+  
 }

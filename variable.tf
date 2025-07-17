@@ -1,3 +1,14 @@
-/*variable "public1-cidr" {
-  default = "10.0.0.0/24"
-}*/
+variable "ami" {  
+}
+
+variable "subnet_id" {
+}
+
+variable "sec-g" {
+}
+
+variable "name" {
+}
+
+variable "bastion_host" {
+}
