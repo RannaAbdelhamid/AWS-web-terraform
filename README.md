@@ -60,3 +60,6 @@ It demonstrates best practices for organizing a cloud environment with public/pr
  - All Ips of the machines will be saved in the EC2-IPs.txt file
 
 <img width="736" height="203" alt="screen1" src="https://github.com/user-attachments/assets/4963177c-0176-490b-bc8e-f25d37df7377" />
+
+
+<img width="671" height="132" alt="screen2" src="https://github.com/user-attachments/assets/3885728e-fb8e-4828-ab78-397e21814996" />
