@@ -1,4 +1,4 @@
-# AWS Multi-Tier Web Application with Terraform
+# 𝐖𝐞𝐛 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐈𝐧𝐟𝐫𝐚𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞 𝐨𝐧 𝐀𝐖𝐒 𝐮𝐬𝐢𝐧𝐠 𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦
 
 This project builds a multi-tier architecture on AWS to host a simple web application using Terraform.
 It demonstrates best practices for organizing a cloud environment with public/private subnets, security groups, NAT, Nginx reverse proxy, and Application Load Balancers (ALB).
