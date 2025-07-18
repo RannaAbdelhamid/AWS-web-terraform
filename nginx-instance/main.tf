@@ -18,7 +18,8 @@ resource "aws_instance" "nginx" {
       "sudo systemctl enable nginx",
       "sudo systemctl start nginx",
       "echo '<h1>NGINX Instance A (Subnet A)</h1>' | sudo tee /usr/share/nginx/html/index.html",
-      "echo 'server { listen 80; location / { proxy_pass http://internal-int-alb-1991368972.us-east-1.elb.amazonaws.com:5000; } }' | sudo tee /etc/nginx/conf.d/proxy.conf"
+      "echo 'server { listen 80; server_name _; location / { proxy_pass http://internal-int-alb-1991368972.us-east-1.elb.amazonaws.com:5000; proxy_set_header Host \\$host; proxy_set_header X-Real-IP \\$remote_addr; proxy_set_header X-Forwarded-For \\$proxy_add_x_forwarded_for; } }' | sudo tee /etc/nginx/conf.d/reverse-proxy.conf",
+      "sudo systemctl restart nginx"
     ]
     
     connection {
