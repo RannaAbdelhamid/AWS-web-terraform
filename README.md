@@ -44,6 +44,16 @@ It demonstrates best practices for organizing a cloud environment with public/pr
 
 - Python Flask (Backend)
 
+## Terraform Remote State Configuration
+Terraform uses an S3 bucket to store the remote state file to ensure:
+
+ - State consistency in collaborative environments
+
+ - Separation of infrastructure management from local machines
+
+<img width="1887" height="545" alt="devbuck" src="https://github.com/user-attachments/assets/82847ba2-070e-4c72-bf18-399ac95ef304" />
+
+
 ## Testing the Deployment
 1. Access the Public ALB DNS URL.
 
