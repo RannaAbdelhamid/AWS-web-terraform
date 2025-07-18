@@ -44,6 +44,24 @@ It demonstrates best practices for organizing a cloud environment with public/pr
 
 - Python Flask (Backend)
 
+## Terraform Project Structure
+
+```
+.
+├── modules/         # Each module contain its main, variable and output files
+│   ├── nginx-instance/
+│   ├── backend-instance/
+│   ├── public-subnet/
+│   └── private-subnet/
+├── main.tf           # Main code
+├── outputs.tf        # Outputs of the code (DNS URL)
+├── variables.tf      
+├── providor.tf       # AWS provider
+├── backend.tf        # Configures Terraform remote backend in S3
+├── README.md
+
+```
+
 ## Terraform Remote State Configuration
 Terraform uses an S3 bucket to store the remote state file to ensure:
 
@@ -51,8 +69,35 @@ Terraform uses an S3 bucket to store the remote state file to ensure:
 
  - Separation of infrastructure management from local machines
 
+```
+terraform {
+  backend "s3" {
+    bucket = "backend-project1-bucket"
+    key    = "backend.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "lockstate-project" 
+  }
+}
+```
+
 <img width="1887" height="545" alt="devbuck" src="https://github.com/user-attachments/assets/82847ba2-070e-4c72-bf18-399ac95ef304" />
 
+## How to Deploy
+
+1️⃣ Initialize Terraform
+```
+terraform init
+```
+
+2️⃣ Validate the Configuration
+```
+terraform validate
+```
+
+3️⃣ Deploy the Infrastructure
+```
+terraform apply
+```
 
 ## Testing the Deployment
 1. Access the Public ALB DNS URL.
